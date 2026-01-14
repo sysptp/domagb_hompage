@@ -474,3 +474,15 @@ hr {
 #main hr {
   border-bottom-color: var(--doma-gray-light) !important;
 }
+
+.features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .icon img {
+  width: 164px;       /* ajusta según diseño */
+  height: 164px;
+  object-fit: contain;
+}
