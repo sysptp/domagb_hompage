@@ -1,341 +1,478 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <title>DOMA-GB Solutions | SaaS & Outsourcing Tecnológico</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <meta name="description"
-    content="Soluciones SaaS y Outsourcing Tecnológico para empresas. Partner tecnológico confiable y escalable.">
-  <meta name="keywords" content="SaaS, Outsourcing, Tecnología, Desarrollo de Software, Consultoría TI">
-  <meta name="author" content="DOMA-GB Solutions">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOMA-GB Solutions - Transformación Digital y SaaS</title>
+  
+  <meta name="description" content="DOMA-GB Solutions es tu partner tecnológico estratégico. Impulsamos la transformación digital con plataformas SaaS y outsourcing de alto rendimiento." />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="DOMA-GB Solutions | SaaS & Outsourcing Tecnológico">
-  <meta property="og:description" content="Soluciones tecnológicas escalables para empresas modernas">
-  <meta property="og:image" content="images/LogoSinfondo.png">
+  <!-- Actualizamos a logo.svg en lugar del favicon inexistente -->
+  <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/doma-custom.css" />
-  <noscript>
-    <link rel="stylesheet" href="assets/css/noscript.css" />
-  </noscript>
-
-
-  <!-- Google Fonts - Roboto -->
+  <!-- Mejoramos la selección de fuentes: Inter y Outfit son más modernas y premium que Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/domad.png" type="image/png">
-  <link rel="apple-touch-icon" href="images/domad.png">
-
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <!-- Lucide icons para los íconos modernos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body class="is-preload">
+<body>
 
-  <!-- Wrapper -->
-  <div id="wrapper">
-
-    <!-- Header -->
-    <header id="header" class="alt">
-      <span class="logo">
-        <img src="images/LogoSinfondo.png" alt="DOMA-GB Solutions Logo" />
-      </span>
-
-      <h1>DOMA-GB Solutions</h1>
-      <p>
-        Soluciones <strong>SaaS</strong> y <strong>Outsourcing Tecnológico</strong><br />
-        que impulsan la eficiencia y el crecimiento empresarial
-      </p>
-    </header>
-
-    <!-- Nav -->
-    <nav id="nav">
-      <ul>
-        <li><a href="#intro" class="active">Inicio</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#process">Proceso</a></li>
-        <li><a href="#cta">Contacto</a></li>
-      </ul>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="javascript:void(0)" onclick="scrollToSection('inicio')" class="logo-link">
+        <img src="images/logo-limpio.png" alt="DOMA-GB Solutions" class="header-logo-img">
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">☰</div>
+      <div class="nav-links" id="navLinks">
+        <button onclick="scrollToSection('inicio')">Inicio</button>
+        <button onclick="scrollToSection('nosotros')">Nosotros</button>
+        <button onclick="scrollToSection('servicios')">Servicios</button>
+        <button onclick="scrollToSection('proceso')">Proceso</button>
+        <button onclick="scrollToSection('contacto')" class="btn-nav-contact">Contacto</button>
+      </div>
     </nav>
+  </header>
 
-    <!-- Main -->
-    <div id="main">
+  <!-- HERO -->
+  <section id="inicio" class="hero watermark-hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/videos/people_video.mp4" type="video/mp4">
+      Tu navegador no soporta el tag de video.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">DOMA-GB Solutions</div>
+      <h1>Tu Partner Tecnológico <br/><span class="text-gradient">Estratégico</span></h1>
+      <p>
+        Impulsamos la transformación digital integral mediante soluciones SaaS y outsourcing tecnológico,
+        alineando la tecnología con los objetivos de tu negocio.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="scrollToSection('contacto')">Solicitar asesoría</button>
+      </div>
+    </div>
+  </section>
 
-      <!-- Intro / Hero -->
-      <section id="intro" class="main">
-        <div class="spotlight">
-          <div class="content">
-            <header class="major">
-              <h2>Tu Partner Tecnológico Estratégico</h2>
-            </header>
+  <!-- ABOUT / TECH -->
+  <section class="tech-section" id="acerca">
+    <div class="tech-container">
+      <div class="tech-content">
+        <h2 class="tech-title">
+          Tu aliado en <span class="tech-highlight">transformación digital</span>
+        </h2>
+        <div class="tech-divider"></div>
+        <p class="tech-text">
+          En <strong>DOMA-GB Solutions</strong>, acompañamos a las organizaciones en su proceso de transformación
+          digital, diseñando, implementando y operando soluciones tecnológicas escalables que impulsan la eficiencia, la
+          innovación y el crecimiento sostenible.
+        </p>
+        <p class="tech-text">
+          A través de plataformas SaaS empresariales y outsourcing tecnológico especializado, nos integramos a tu
+          operación para optimizar procesos, reducir riesgos y asegurar que la tecnología esté completamente alineada
+          con los objetivos estratégicos de tu negocio.
+        </p>
+        <p class="tech-text">
+          Más que un proveedor, somos un aliado tecnológico que aporta visión, experiencia y acompañamiento continuo,
+          ayudando a tu empresa a tomar mejores decisiones y a escalar con confianza en un entorno digital competitivo.
+        </p>
+      </div>
+    </div>
+  </section>
 
-            <p>
-              En <strong>DOMA-GB Solutions</strong>, acompañamos a las organizaciones en
-              su proceso de transformación digital, diseñando, implementando y
-              operando soluciones tecnológicas escalables que impulsan la eficiencia,
-              la innovación y el crecimiento sostenible.
-            </p>
-
-            <p>
-              A través de plataformas <strong>SaaS empresariales</strong> y
-              <strong>outsourcing tecnológico especializado</strong>, nos integramos a
-              tu operación para optimizar procesos, reducir riesgos y asegurar que la
-              tecnología esté completamente alineada con los objetivos estratégicos
-              de tu negocio.
-            </p>
-
-            <p>
-              Más que un proveedor, somos un aliado tecnológico que aporta visión,
-              experiencia y acompañamiento continuo, ayudando a tu empresa a tomar
-              mejores decisiones y a escalar con confianza en un entorno digital
-              competitivo.
-            </p>
-
-            <ul class="actions">
-              <li>
-                <a href="#cta" class="button primary">Solicitar asesoría</a>
-              </li>
-              <li>
-                <a href="#services" class="button">Nuestros servicios</a>
-              </li>
-            </ul>
-          </div>
-
-          <span class="image">
-            <img src="images/pic01.png" alt="Soluciones Tecnológicas Empresariales" />
-          </span>
-        </div>
-      </section>
-
-
-      <!-- Services -->
-      <section id="services" class="main special">
-        <header class="major">
-          <h2>Servicios Tecnológicos</h2>
-          <p>
-            Soluciones tecnológicas integrales diseñadas para impulsar la
-            eficiencia operativa, la escalabilidad y la innovación empresarial.
-          </p>
-        </header>
-
-        <ul class="features">
-          <li>
-            <span class="icon major style1">
-              <img src="images/ChatGPT Image Jan 10, 2026, 01_35_58 AM - copia (2).png" alt="Plataformas SaaS">
-            </span>
-            <h3>Plataformas SaaS</h3>
-            <p>
-              Diseñamos, desarrollamos e implementamos plataformas SaaS a la medida,
-              enfocadas en automatizar procesos, optimizar recursos y mejorar la toma
-              de decisiones. Nuestras soluciones son escalables, seguras y adaptables
-              al crecimiento de tu negocio, integrándose fácilmente con tus sistemas
-              existentes.
-            </p>
-          </li>
-
-          <li>
-            <span class="icon major style3">
-              <img src="images/ChatGPT Image Jan 10, 2026, 01_35_58 AM - copia.png" alt="Outsourcing Tecnológico">
-            </span>
-            <h3>Outsourcing Tecnológico</h3>
-            <p>
-              Proveemos equipos tecnológicos especializados que se integran a tu
-              organización como una extensión de tu equipo interno. Contamos con
-              profesionales en desarrollo de software, soporte técnico,
-              infraestructura y gestión de proyectos, permitiéndote reducir costos,
-              acelerar entregas y enfocarte en tu core de negocio.
-            </p>
-          </li>
-
-          <li>
-            <span class="icon major style5">
-              <img src="images/ChatGPT Image Jan 10, 2026, 01_35_58 AM.png" alt="Consultoría & Soporte">
-            </span>
-            <h3>Consultoría & Soporte</h3>
-            <p>
-              Ofrecemos consultoría estratégica en tecnología, acompañándote en la
-              definición, evaluación y optimización de tus plataformas digitales.
-              Nuestro servicio de soporte continuo garantiza estabilidad,
-              disponibilidad y mejora constante, alineando la tecnología con los
-              objetivos estratégicos de tu empresa.
-            </p>
-          </li>
-        </ul>
-
-
-
-        <!-- Process -->
-        <section id="process" class="main special">
-          <header class="major">
-            <h2>Nuestro Proceso</h2>
-            <p>
-              Un enfoque estructurado, ágil y orientado a resultados que asegura
-              soluciones tecnológicas alineadas a las necesidades reales de tu negocio.
-            </p>
-          </header>
-
-          <ul class="statistics">
-            <li class="style1">
-              <span class="icon solid fa-search"></span>
-              <strong>Análisis</strong>
-              <p>
-                Evaluamos tus procesos, objetivos y retos tecnológicos para entender a
-                fondo tu operación y definir oportunidades de mejora.
-              </p>
-            </li>
-
-            <li class="style2">
-              <span class="icon solid fa-lightbulb"></span>
-              <strong>Propuesta</strong>
-              <p>
-                Diseñamos una solución tecnológica clara y viable, alineada a tu
-                estrategia empresarial, con alcance, tiempos y resultados definidos.
-              </p>
-            </li>
-
-            <li class="style3">
-              <span class="icon solid fa-cogs"></span>
-              <strong>Implementación</strong>
-              <p>
-                Desarrollamos e integramos la solución utilizando metodologías ágiles,
-                asegurando calidad, seguridad y cumplimiento de los objetivos
-                establecidos.
-              </p>
-            </li>
-
-            <li class="style4">
-              <span class="icon solid fa-headset"></span>
-              <strong>Soporte</strong>
-              <p>
-                Brindamos acompañamiento continuo, monitoreo y mejoras evolutivas para
-                garantizar estabilidad, rendimiento y crecimiento sostenido.
-              </p>
-            </li>
-          </ul>
-
-          <p class="content">
-            Nuestro proceso combina experiencia técnica, visión estratégica y una
-            cultura de mejora continua, permitiéndonos entregar soluciones robustas,
-            confiables y preparadas para evolucionar junto a tu empresa.
-          </p>
-        </section>
-
-
-        <!-- CTA -->
-        <section id="cta" class="main special">
-          <header class="major">
-            <h2>Transforma tu operación tecnológica</h2>
-            <p>
-              Da el siguiente paso en la evolución digital de tu empresa. Agenda una
-              asesoría personalizada y descubre cómo en <strong>DOMA-GB Solutions</strong>
-              podemos ayudarte a optimizar procesos, reducir costos operativos y
-              construir una plataforma tecnológica sólida, segura y preparada para
-              escalar junto a tu negocio.
-            </p>
-          </header>
-
-          <footer class="major">
-            <ul class="actions special">
-              <li>
-                <a href="mailto:contacto@domagbsolutions.com" class="button primary">
-                  Contáctanos
-                </a>
-              </li>
-              <li>
-                <a href="#services" class="button">Ver servicios</a>
-              </li>
-            </ul>
-          </footer>
-        </section>
-
-
+  <!-- SERVICIOS -->
+  <section id="servicios" class="container section-padding">
+    <div class="section-title">
+      <span class="badge-accent">Nuestras Soluciones</span>
+      <h2>Soluciones Tecnológicas Empresariales</h2>
+      <p>Servicios diseñados para optimizar procesos y escalar operaciones con enfoque absoluto en el ROI.</p>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <section>
-        <h2>DOMA-GB Solutions</h2>
-        <p>
-          Somos una empresa tecnológica enfocada en el desarrollo de soluciones
-          <strong>SaaS empresariales</strong> y <strong>outsourcing tecnológico</strong>,
-          ayudando a organizaciones a optimizar sus procesos, escalar de forma
-          segura y acelerar su transformación digital.
-        </p>
-        <p>
-          Convertimos la tecnología en un habilitador estratégico para el
-          crecimiento, la eficiencia operativa y la toma de decisiones.
-        </p>
-      </section>
+    <div class="grid grid-3">
+      <div class="card premium-hover style-card">
+        <div class="image-placeholder">
+          <!-- Nueva imagen profesional de SaaS -->
+          <img src="images/saas-service.png" alt="Plataformas SaaS">
+        </div>
+        <h3>Plataformas SaaS</h3>
+        <p>Desarrollo de plataformas escalables que automatizan procesos, logrando una eficiencia operativa que potenciará tu empresa.</p>
+      </div>
 
-      <section>
-        <h2>Contacto</h2>
-        <dl class="alt">
-          <dt>Email</dt>
-          <dd>
-            <a href="mailto:info@domagbsolutions.com">
-              <strong>info@domagbsolutions.com</strong>
+      <div class="card premium-hover style-card">
+        <div class="image-placeholder">
+          <!-- Nueva imagen profesional de Outsourcing -->
+          <img src="images/outsourcing-service.png" alt="Outsourcing Tecnológico">
+        </div>
+        <h3>Outsourcing Tecnológico</h3>
+        <p>Equipos especializados de grado senior que se integran de lleno a tu empresa para acelerar desarrollos y reducir costos fijos.</p>
+      </div>
+
+      <div class="card premium-hover style-card">
+        <div class="image-placeholder">
+          <!-- Nueva imagen profesional de Consultoría -->
+          <img src="images/partnership.png" alt="Consultoría & Soporte">
+        </div>
+        <h3>Consultoría Estratégica</h3>
+        <p>Acompañamiento técnico y soporte continuo de infraestructura para garantizar el crecimiento técnico de tu operación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISIÓN & VISIÓN -->
+  <section id="nosotros" class="mission-vision-premium">
+    <div class="container-fluid">
+      <div class="mv-flex-container">
+        <div class="mv-brand-side">
+          <div class="mv-visual-element">
+            <!-- Archivo generado -->
+            <img src="images/office-premium.png" alt="DOMA-GB Corporate Office">
+            <div class="mv-experience-badge">
+              <strong>10+</strong>
+              <span>Años de Visión</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mv-content-side">
+          <div class="mv-item">
+            <span class="mv-label">Propósito</span>
+            <h3>Nuestra Misión</h3>
+            <div class="mv-divider"></div>
+            <p>Facilitar la evolución digital de las empresas a través de soluciones estratégicas, integrando talento de
+              élite y software de vanguardia para maximizar su dominio en el mercado.</p>
+          </div>
+
+          <div class="mv-item">
+            <span class="mv-label">Futuro</span>
+            <h3>Nuestra Visión</h3>
+            <div class="mv-divider"></div>
+            <p>Consolidarnos como el referente regional en consultoría tecnológica, transformando la complejidad técnica
+              en agilidad operativa y crecimiento sostenible para nuestros socios estratégicos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso" class="process-section-fluid">
+    <div class="container-fluid">
+      <div class="section-title">
+        <span class="badge-accent">Metodología Ágil</span>
+        <h2>Ingeniería Paso a Paso</h2>
+        <p>Un flujo de trabajo riguroso diseñado para eliminar la incertidumbre y garantizar resultados escalables.</p>
+      </div>
+
+      <div class="process-stepper">
+        <div class="process-step-item">
+          <div class="step-header">
+            <div class="step-icon-circle">
+              <i data-lucide="microscope"></i>
+            </div>
+            <span class="step-count">01</span>
+          </div>
+          <div class="step-body">
+            <h3>Análisis Integral</h3>
+            <p>Auditamos exhaustivamente la infraestructura y procesos actuales para detectar brechas de eficiencia reales.</p>
+          </div>
+        </div>
+
+        <div class="process-step-item">
+          <div class="step-header">
+            <div class="step-icon-circle">
+              <i data-lucide="file-code"></i>
+            </div>
+            <span class="step-count">02</span>
+          </div>
+          <div class="step-body">
+            <h3>Arquitectura Sólida</h3>
+            <p>Modelamos metodológicamente la solución técnica, priorizando seguridad e integración con tu modelo actual.</p>
+          </div>
+        </div>
+
+        <div class="process-step-item">
+          <div class="step-header">
+            <div class="step-icon-circle">
+              <i data-lucide="cpu"></i>
+            </div>
+            <span class="step-count">03</span>
+          </div>
+          <div class="step-body">
+            <h3>Despliegue Exacto</h3>
+            <p>Implementación probada en entornos CI/CD, asegurando máxima estabilidad operativa del software.</p>
+          </div>
+        </div>
+
+        <div class="process-step-item">
+          <div class="step-header">
+            <div class="step-icon-circle">
+              <i data-lucide="activity"></i>
+            </div>
+            <span class="step-count">04</span>
+          </div>
+          <div class="step-body">
+            <h3>Evolución Continua</h3>
+            <p>Soporte de nivel senior y observación constante para garantizar resiliencia en la innovación de tu empresa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE DOMA-GB -->
+  <section class="container-fluid bg-dark-refinement">
+    <div class="section-title">
+      <span class="badge-accent">La Ventaja DOMA-GB</span>
+      <h2>Llevamos tu infraestructura al siguiente nivel</h2>
+      <p>No somos un proveedor generalista; somos el motor estratégico de talento que acelera tu empresa.</p>
+    </div>
+
+    <div class="grid grid-3 max-container">
+      <div class="card-premium">
+        <div class="icon-container">
+          <i data-lucide="target" class="icon-accent"></i>
+        </div>
+        <h3>Ingeniería Orientada al ROI</h3>
+        <p>Eliminamos el gasto inútil. Cada solución está finamente diseñada para maximizar la rentabilidad de las inversiones y optimizar tiempo.</p>
+      </div>
+
+      <div class="card-premium">
+        <div class="icon-container">
+          <i data-lucide="zap" class="icon-accent"></i>
+        </div>
+        <h3>Arquitectura High-Performance</h3>
+        <p>Entregamos sistemas ultrarrápidos y modulares. Tu tecnología nunca limitará tus operaciones por exceso de carga.</p>
+      </div>
+
+      <div class="card-premium">
+        <div class="icon-container">
+          <i data-lucide="award" class="icon-accent"></i>
+        </div>
+        <h3>Expertise de Grado Senior</h3>
+        <p>Acceso continuo a talento especializado que descifra lógicas críticas garantizando un producto libre de deudas técnicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES Y ADN -->
+  <section class="values-section-premium">
+    <div class="container-fluid">
+      <div class="section-title">
+        <span class="badge-accent">Nuestra Cultura</span>
+        <h2>El ADN de DOMA-GB</h2>
+        <p>Nuestros principios aseguran la perfección de las integraciones que realizamos y diseñamos.</p>
+      </div>
+
+      <div class="grid-values-visual">
+        <div class="value-card-visual">
+          <div class="value-image-wrapper">
+            <!-- Archivo generado -->
+            <img src="images/innovation-tech.png" alt="Innovación Tecnológica">
+            <div class="value-overlay"></div>
+          </div>
+          <div class="value-text-content">
+            <i data-lucide="lightbulb" class="value-icon-pro"></i>
+            <h3>Innovación</h3>
+            <p>Exploramos arquitecturas nuevas para otorgar una agilidad de despliegue que nos posicione como líderes.</p>
+          </div>
+        </div>
+
+        <div class="value-card-visual">
+          <div class="value-image-wrapper">
+            <!-- Archivo generado -->
+            <img src="images/partnership.png" alt="Cercanía y Partner">
+            <div class="value-overlay"></div>
+          </div>
+          <div class="value-text-content">
+            <i data-lucide="handshake" class="value-icon-pro"></i>
+            <h3>Colaboración</h3>
+            <p>Formamos vínculos duraderos, mimetizando a nuestro equipo con el tuyo eliminando la fricción comunicacional.</p>
+          </div>
+        </div>
+
+        <div class="value-card-visual">
+          <div class="value-image-wrapper">
+            <!-- Archivo generado -->
+            <img src="images/excellence-detail.png" alt="Excelencia Técnica">
+            <div class="value-overlay"></div>
+          </div>
+          <div class="value-text-content">
+            <i data-lucide="check-circle" class="value-icon-pro"></i>
+            <h3>Excelencia</h3>
+            <p>Diseñamos plataformas inquebrantables. Nuestra obsesión se plasma en la seguridad que transmitimos con cada software.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA PRINCIPAL -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-glass-box">
+        <div class="glass-decoration"></div>
+        <h2>Escala tu operativa tecnológica hoy</h2>
+        <p>Agenda una consulta con nuestro departamento de ingeniería y da un paso a una eficiencia inigualable.</p>
+        <a href="mailto:ventas@domagbsolutions.com?subject=Solicitud%20de%20Asesoría%20Estratégica%20-%20DOMA-GB"
+          class="btn btn-cta-light">
+          Agendar Sesión Estratégica
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALENTO -->
+  <section id="talento" class="career-section-fluid">
+    <div class="container">
+      <div class="career-card-glass">
+        <div class="glass-bg-circle"></div>
+        
+        <div class="career-content">
+          <div class="badge-premium">Talento de Élite</div>
+          <h2>¿Listo para construir el futuro?</h2>
+          
+          <div class="tech-divider-center"></div>
+
+          <div class="career-text-wrapper">
+            <p class="tech-text-lead">
+              En <strong>DOMA-GB Solutions</strong> buscamos mentes creativas; genuinos arquitectos de software enfocados en dominar la escalabilidad. 
+            </p>
+            <p class="tech-text-sub">
+              Aquí el desafío no decae. Si tienes ansias de desplegar ideas asombrosas y rodearte de colegas ambiciosos y apasionados, <strong>estás en el puerto correcto.</strong>
+            </p>
+          </div>
+
+          <div class="career-cta-group">
+            <a href="mailto:talento@domagbsolutions.com?subject=Postulación%20Ingeniería%20-%20[Tu%20Nombre]"
+              class="btn-premium-lg">
+              <i data-lucide="send" class="btn-icon"></i>
+              Enviar mi CV ahora
             </a>
-          </dd>
+            <div class="career-contact-info">
+              <i data-lucide="mail"></i>
+              <span>talento@domagbsolutions.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <dt>Teléfono</dt>
-          <dd>+1 (829) 301-0472</dd>
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="javascript:void(0)" onclick="scrollToSection('inicio')" class="footer-logo-link">
+          <img src="images/logo-limpio.png" alt="DOMA-GB Solutions Logo" class="footer-logo-img">
+        </a>
+        <p>DOMA-GB es el nodo que aglomera visión experta con eficiencia incuestionable, uniendo crecimiento y solidez informática.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/domagbsolutions/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i data-lucide="instagram"></i> Instagram
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i data-lucide="linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
 
-          <dt>LinkedIn</dt>
-          <dd>
-            <a href="https://www.linkedin.com/in/doma-gb-solutions-84ba493a5/" target="_blank">
-              <strong>linkedin.com/company/doma-gb-solutions</strong>
-            </a>
-          </dd>
-
-          <dt>Instagram</dt>
-          <dd>
-            <a href="https://www.instagram.com/domagbsolutions" target="_blank">
-              <strong>instagram.com/domagbsolutions</strong>
-            </a>
-          </dd>
-
-
-          <dt>Ubicación</dt>
-          <dd>Santo Domingo, República Dominicana</dd>
-        </dl>
-
-        <ul class="icons">
-          <li>
-            <a href="https://www.linkedin.com/in/doma-gb-solutions-84ba493a5/" target="_blank"
-              class="icon brands fa-linkedin alt">
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/domagbsolutions" target="_blank" class="icon brands fa-instagram alt">
-              <span class="label">Instagram</span>
-            </a>
-          </li>
+      <div class="footer-links">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="javascript:void(0)" onclick="scrollToSection('inicio')">Inicio</a></li>
+          <li><a href="javascript:void(0)" onclick="scrollToSection('nosotros')">Nosotros</a></li>
+          <li><a href="javascript:void(0)" onclick="scrollToSection('servicios')">Servicios</a></li>
+          <li><a href="javascript:void(0)" onclick="scrollToSection('proceso')">Metodología</a></li>
         </ul>
-      </section>
+      </div>
 
-      <p class="copyright">
-        &copy; 2026 DOMA-GB Solutions. Todos los derechos reservados.
-      </p>
-    </footer>
+      <div class="footer-links">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="#">Sistemas SaaS</a></li>
+          <li><a href="#">Staffing de IT</a></li>
+          <li><a href="#">Expansión Digital</a></li>
+          <li><a href="#">Infraestructura Backend</a></li>
+        </ul>
+      </div>
 
+      <div class="footer-contact">
+        <h4>Contacto e Info</h4>
+        <div class="contact-item">
+          <i data-lucide="map-pin"></i>
+          <span>Santo Domingo, Rep. Dom.</span>
+        </div>
+        <div class="contact-item">
+          <i data-lucide="mail"></i>
+          <a href="mailto:info@domagbsolutions.com">info@domagbsolutions.com</a>
+        </div>
+        <div class="contact-item">
+          <i data-lucide="phone"></i>
+          <span>+1 (829) 619-6632</span>
+        </div>
+      </div>
+    </div>
 
-  </div>
+    <div class="footer-bottom">
+      <div class="container-footer">
+        <p>&copy; 2026 DOMA-GB Solutions. Reservamos todos los derechos. | <a href="#">Aviso de Privacidad</a></p>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script>
+    // Inicializar iconos de Lucide
+    lucide.createIcons();
+
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const headerOffset = 85;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+      toggleMenu(true);
+    }
+
+    function toggleMenu(forceClose = false) {
+      const nav = document.getElementById("navLinks");
+      if (!nav) return;
+      if (forceClose) {
+        nav.classList.remove("active");
+      } else {
+        nav.classList.toggle("active");
+      }
+    }
+
+    window.addEventListener("scroll", () => {
+      document.getElementById("header").classList.toggle("scrolled", window.scrollY > 40);
+    });
+
+    const observerOption = { threshold: 0.1, rootMargin: "0px 0px -40px 0px" };
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+      });
+    }, observerOption);
+
+    document.querySelectorAll(".style-card, .process-step-item, .card-premium, .value-card-visual").forEach(el => observer.observe(el));
+  </script>
 
 </body>
-
 </html>
