@@ -299,6 +299,13 @@ img {
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  opacity: 0; /* Start invisible and fade in */
+  transition: opacity 1s ease;
+}
+
+.hero-video[poster],
+.hero-video {
+  opacity: 1; /* Poster or video will show smoothly */
 }
 
 .hero-overlay {

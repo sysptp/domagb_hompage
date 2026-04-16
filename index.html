@@ -43,7 +43,7 @@
 
   <!-- HERO -->
   <section id="inicio" class="hero watermark-hero">
-    <video autoplay muted loop playsinline class="hero-video">
+    <video autoplay muted="muted" loop playsinline preload="auto" poster="images/office-premium.png" class="hero-video" id="heroVideo">
       <source src="images/videos/people_video.mp4" type="video/mp4">
       Tu navegador no soporta el tag de video.
     </video>
@@ -431,6 +431,26 @@
   <script>
     // Inicializar iconos de Lucide
     lucide.createIcons();
+
+    // Fix para reproducción de video en móviles (especialmente iOS y modo ahorro)
+    window.addEventListener('load', function() {
+      const heroVideo = document.getElementById('heroVideo');
+      if (heroVideo) {
+        // Forzamos el play después de una breve demora para asegurar carga
+        setTimeout(() => {
+          heroVideo.play().catch(error => {
+            console.warn("Autoplay was prevented, waiting for interaction or staying with poster.", error);
+          });
+        }, 300);
+
+        // Intento adicional al primer toque si el autoplay falló
+        document.body.addEventListener('touchstart', function() {
+          if (heroVideo.paused) {
+            heroVideo.play();
+          }
+        }, { once: true });
+      }
+    });
 
     function scrollToSection(id) {
       const element = document.getElementById(id);
